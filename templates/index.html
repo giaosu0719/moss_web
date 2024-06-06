@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <style>
+      @keyframes color {
+  0%   { background: #33CCCC; }
+  20%  { background: #33CC36; }
+  40%  { background: #B8CC33; }
+  60%  { background: #FCCA00; }
+  80%  { background: #33CC36; }
+  100% { background: #33CCCC; }
+}
+
+body {
+  background: #33CCCC; /* Fallback */
+  animation: color 9s infinite linear;
+  text-align: center;
+  padding: 2em;
+}
+h1 {
+  text-align: center;
+  font-family: 'Kavoon', sans-serif;
+  font-size: 2.5em;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Consolas', Consolas;
+  color: white;
+}
+textarea,label{
+  background: transparent;
+  font-family: 'Consolas', Consolas;
+  color: black;
+  font-size: 1.25em;
+}
+input {
+  font-family: 'Consolas', Consolas;
+  color: black;
+  font-size: 1.25em;
+}
+.message{
+  background-color: red;
+  color: white;
+}
+    </style>
+  </head>
+  <body>
+    <h2>Moss code</h2>
+    <form method="POST" name = "formdeptrai">
+      <textarea id="code1" name="code1" rows="25" cols="50" placeholder="Enter first code here..." ></textarea>
+      <textarea id="code2" name="code2" rows="25" cols="50" placeholder="Enter second code here..."></textarea>
+      <br> 
+      <input type="radio" id="cpp" name="lang" value="cpp">
+      <label for="cpp">C++</label><br>
+      <input type="radio" id="py" name="lang" value="py">
+      <label for="py">Python</label>
+      <br>
+      {%with mess = get_flashed_messages()%}
+      {%if mess%}
+        <p class="message">{{mess[0]}}</p>
+      {%endif%}
+      {%endwith%}
+      <input type="button" value="Submit" id="btnsubmit" onclick="submitForm()">
+      <script>
+        function submitForm() {
+          var frm = document.getElementsByName('formdeptrai')[0];
+          frm.submit();
+          frm.reset();
+          return false;
+        }
+      </script>
+    </form>
+  </body>
+</html>

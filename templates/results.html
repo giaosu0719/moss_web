@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <style>
+           @keyframes color {
+  0%   { background: #33CCCC; }
+  20%  { background: #33CC36; }
+  40%  { background: #B8CC33; }
+  60%  { background: #FCCA00; }
+  80%  { background: #33CC36; }
+  100% { background: #33CCCC; }
+}
+
+body {
+  background: #33CCCC; /* Fallback */
+  animation: color 9s infinite linear;
+  text-align: center;
+  padding: 2em;
+}
+h1 {
+  text-align: center;
+  font-family: 'Kavoon', sans-serif;
+  font-size: 2.5em;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Consolas', Consolas;
+  color: white;
+}
+textarea {
+  background: transparent;
+  font-family: 'Consolas', Consolas;
+  color: black;
+  font-size: 1.25em;
+}
+a,h3 {
+  text-align: center;
+  font-family: 'Consolas', Consolas;
+  color: black;
+}
+.message{
+  background-color: red;
+  color: white;
+}
+    </style>
+  </head>
+  <body>
+    <h2>Moss code</h2>
+    <h3>
+        {{resultss}}
+    </h3>
+    <h3>
+        <a href="{{logs}}">{{logs}}</a>
+    </h3>
+    <a href="/">Click here to go to homepage.</a> 
+  </body>
+</html>

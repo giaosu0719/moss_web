@@ -1,0 +1,7 @@
+sus : perl moss.pl -l <ngon ngu vd: c++ => cc> <file1> <file2> ...
+languages = ("c", "cc", "java", "ml", "pascal", "ada", "lisp", "scheme", "haskell", "fortran", "ascii", "vhdl", "perl", "matlab", "python", "mips", "prolog", "spice", "vb", "csharp", "modula2", "a8086", "javascript", "plsql", "verilog")
+- sẽ không chấm những hàm (có thể bị check một số cái), biến , ... ở ngoài int main
+- sửa lại cách trình bày thì vẫn có thể bị dính chưởng
+- code 1 dòng vẫn dính chưởng (code 1 dòng nhẹ nhè thì it bị)
+- define thi bu
+- add code rac
