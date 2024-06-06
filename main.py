@@ -44,7 +44,6 @@ def moss():
     number = str(len(dir) + 1)
     path = os.path.join(path_results,number)
     os.mkdir(path)
-    # con cac bu cha ba lua :fire:
     # Luu ket qua
     with open(path_results + number + f'/code1.{request.values.get('lang')}', 'w') as f:
         f.write(f'{request.values.get('code1')}')
