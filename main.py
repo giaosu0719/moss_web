@@ -46,9 +46,9 @@ def moss():
     os.mkdir(path)
     # Luu ket qua
     with open(path_results + number + f'/code1.{request.values.get("lang")}', 'w') as f:
-        f.write(f'{request.values.get('code1')}')
+        f.write(f'{request.values.get("code1")}')
     with open(path_results + number + f'/code2.{request.values.get("lang")}', 'w') as f:
-        f.write(f'{request.values.get('code2')}')
+        f.write(f'{request.values.get("code2")}')
     with open(path_results + number + '/config.txt', 'w') as f:
         f.write('True')
     
